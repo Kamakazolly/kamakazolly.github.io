@@ -1,0 +1,176 @@
+* {
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+body > .index {
+    display: flex;
+    padding: 0rem 12.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 769px) {
+    body > .index {
+        display: flex;
+        padding: 2rem 12.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5rem;
+        flex: 1 0 0;
+        align-self: stretch;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+}
+    
+@media only screen and (max-width: 768px) {
+    body > .index {
+        display: flex;
+        padding: 5% 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5rem;
+        flex: 1 0 0;
+        align-self: stretch;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+
+    .container {
+        padding: 5% 0%;
+    }
+
+    .illustration .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+}
+
+.background {
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #090909;
+}
+
+.container > .title-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.875rem;
+    align-self: stretch;
+}
+
+.container > .title-header > .logo {
+    display: flex;
+    width: 6.25rem;
+    height: 6.25rem;
+    padding: 0.0625rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: 1px solid #F1F1F1;
+}
+
+.container > .title-header > .brand-logo {
+    width: 3.39094rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+}
+
+.container > .title-header > .title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-self: stretch;
+}
+h1 {
+    color: #F1F1F1;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.12rem;
+    margin: 0px;
+}
+
+h2 {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+    margin: 0px;
+}
+
+h3 {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+    margin: 0px;
+}
+
+.container > .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.container > .contact > h2 {
+    color: #ccc;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+    margin: 0px;
+}
+
+.container > .contact > span {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.875rem;
+}
+.container > .contact > span > a {
+    color: #F1F1F1;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+    margin:0px;
+}
