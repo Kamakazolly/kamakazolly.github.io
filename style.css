@@ -110,7 +110,7 @@ body > .index {
     align-items: flex-start;
     align-self: stretch;
 }
-h1 {
+.container > .title-header > .title-text > h1 {
     color: #F1F1F1;
     font-size: 3rem;
     font-style: normal;
@@ -120,7 +120,7 @@ h1 {
     margin: 0px;
 }
 
-h2 {
+.container > .title-header > .title-text > h2 {
     color: #ccc;
     font-size: 1.5rem;
     font-style: normal;
@@ -130,18 +130,144 @@ h2 {
     margin: 0px;
 }
 
-h3 {
+.container > .header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 3.75rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin-bottom: 5rem;
+}
+
+.container > .header > .site-name {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.container > .header > .site-name > .logo {
+    width: 2.03456rem;
+    height: 1.875rem;
+}
+
+.container > .header > .site-name > .brand-text {
+    color: #F1F1F1;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+}
+
+.drop {
+    color: #F1F1F1;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    flex: auto;
+    z-index: 1;
+}
+
+.drop-content a {
+    color: #F1F1F1;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+    display: block;
+    text-align: left;
+    margin-top:1rem;
+}
+
+.drop-content a:hover {
+    color: #F1F1F1;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+}
+
+.drop:hover .drop-content {
+    display: block;
+}
+
+.container > .header > .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+}
+
+.container > .header > .header-nav > a {
+    color: #F1F1F1;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+}
+
+.container > .header > .header-nav > .active {
+    color: #F1F1F1;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+}
+
+.container > .portfolios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.container > .portfolios > .items {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    transition: outline 0.6s linear;
+}
+
+.container > .portfolios > .items > h2 {
     color: #ccc;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 275;
     line-height: normal;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.2rem;
+    margin: 0px;
+}
+
+.container > .portfolios > .items > h1 {
+    color: #F1F1F1;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16rem;
     margin: 0px;
 }
 
 .container > .contact {
     display: flex;
+    padding: 0rem 1.25rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -173,4 +299,58 @@ h3 {
     line-height: normal;
     letter-spacing: 0.06rem;
     margin:0px;
+}
+.content {
+    margin-bottom: 5rem;
+}
+
+.content > .content-title {
+    margin-bottom: 3rem;
+}
+
+.content > .content-title > h1 {
+    color: #F1F1F1;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16rem;
+    margin: 0px;
+}
+
+.content > .content-title > h2 {
+    color: #F1F1F1;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 0.2rem;
+    margin: 0px;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    min-height: 20rem;
+    min-width: 20rem;
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 5px; */
+    transition: opacity 0.5s ease;
+}
+
+.projects-item:hover {
+    opacity: 0.8;
 }
